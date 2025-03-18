@@ -1,11 +1,10 @@
-# Note: In a yml each level is padded by 2 spaces
 name: Flutter
 
 on:
-  # Runs this action when you push on master
+  # Runs this action when you push on main branch
   push:
     branches: [ "main" ]
-  # Runs this when a PR against master is created
+  # Runs this when a PR against main is created
   pull_request:
     branches: [ "main" ]
 
@@ -17,7 +16,6 @@ jobs:
     runs-on: macos-latest
 
     steps:
-
       # Clones the project on the machine
       - uses: actions/checkout@v4
 
@@ -26,9 +24,7 @@ jobs:
         uses: subosito/flutter-action@v2
         with:
           channel: 'stable'
-          # flutter-version: '3.16.8'
-          # ^ If you want to use a specific version of flutter
       
       # Fetches proj dependencies from pub
-      - name: Install dependenciesgit
+      - name: Install dependencies
         run: flutter pub get
