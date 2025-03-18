@@ -146,8 +146,11 @@ Widget snackItem(String name, String imagePath, String videoUrl,
   return GestureDetector(
     onTap: () async {
       final Uri uri = Uri.parse(videoUrl);
-      if (await canLaunch(uri.toString())) {
-        await launch(uri.toString());
+
+      // ใช้ canLaunchUrl แทน canLaunch
+      if (await canLaunchUrl(uri)) {
+        // ใช้ launchUrl แทน launch
+        await launchUrl(uri);
       } else {
         ScaffoldMessenger.of(context).showSnackBar(
           SnackBar(content: Text('ไม่สามารถเปิดลิงก์ได้')),
