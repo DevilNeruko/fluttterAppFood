@@ -1,0 +1,26 @@
+name: flutter_application_1
+description: แอปของกินและของว่างที่ชอบ
+
+# เวอร์ชันของ Flutter SDK ที่ต้องการ
+environment:
+  sdk: ">=2.17.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  url_launcher: ^6.3.14
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/images/แกงเผ็ด.jpg
+    - assets/images/ก๋วยเตี๋ยว.jpg
+    - assets/images/ข้าวซอย.jpg
+    - assets/images/ข้าวผัด.jpg
+    - assets/images/ชานมไข่มุก.jpg
+    - assets/images/บราวนี่.jpg
+    - assets/images/เฟรนช์ฟรายส์.jpg

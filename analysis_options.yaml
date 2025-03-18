@@ -1,0 +1,24 @@
+name: flutter_application_1
+description: แอปแนะนำสถานที่ท่องเที่ยว
+
+# เวอร์ชันของ Flutter SDK ที่ต้องการ
+environment:
+  sdk: ">=2.17.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  url_launcher: ^6.1.7
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/images/location1.jpg
+    - assets/images/location2.jpg
+    - assets/images/location3.jpg
+    - assets/images/location4.jpg
+    - assets/images/location5.jpg
