@@ -7,6 +7,7 @@ import 'location4.dart';
 import 'location5.dart';
 import 'location6.dart';
 import 'location7.dart';
+//ยศกรคั้บ
 
 void main() {
   runApp(TouristApp());
