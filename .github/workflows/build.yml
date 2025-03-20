@@ -57,7 +57,7 @@ jobs:
 
       # Create android apk
       - name: Build apk
-        run: flutter build apkb
+        run: flutter build apk
       
         # Upload apk to Firebase distribution
       - name: Upload apk to Firebase distribution
