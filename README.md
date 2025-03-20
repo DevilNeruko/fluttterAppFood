@@ -1,4 +1,2 @@
-kuygeno
 
-
-dsadsadsadsadsa
+DKUB EIEI
