@@ -1,4 +1,2 @@
-kuygeno
-
 
 DKUB EIEI
